@@ -1,0 +1,30 @@
+/*
+
+  CSS for nav element
+
+*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee';
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 2.5em;
+  position: relatve;
+}
+
+/* set font style and size apart from main nav */
+.navbar2 {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+#title {
+  font-size: 35px;
+}
