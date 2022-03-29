@@ -1,0 +1,42 @@
+/*
+  CSS for new tweets
+*/
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+}
+
+/***** fix height *****/
+#tweet-text.input {
+  height: 2em;
+  width: 100%;
+  border: none;
+  border-bottom: 0.2em solid #565149;
+  background-color: transparent;
+  color: #565149;
+  font-weight: bold;
+  outline: none;
+}
+
+/* control style for tweet button and counter */
+.navbar3 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.4em;
+}
+
+.counter {
+  font-size: 0.8em;
+  font-family: 'Bungee';
+}
+
+.button {
+  font-size: 0.8em;
+  font-family: 'Bungee';
+  color: #FFFFFF;
+  background-color: #4056A1;
+  border: none;
+  width: 110%;
+  height: 100%;
+}
