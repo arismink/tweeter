@@ -1,0 +1,14 @@
+/*
+  CSS for header element
+*/
+
+
+header {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cdf279;
+  background-image: url("../images/gplay.png");
+}
