@@ -32,3 +32,18 @@ body {
    width: 90%;
    position: relative;
  }
+
+ header {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ /* resize pfp dynamically */
+ .pfp {
+   display: block;
+   margin: 0px auto;
+   border-radius: 50%;
+   width: 20%;
+   height: auto;
+ }
