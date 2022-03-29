@@ -11,20 +11,24 @@ nav {
   width: 100%;
   background-color: #4056A1;
   color: #FFFFFF;
-  font-family: 'Bungee';
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-top: 2.5em;
-  position: relatve;
+  position: relative;
 }
 
-/* set font style and size apart from main nav */
+/* set font style for tweet text*/
 .navbar2 {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: 0.8em;
+}
+
+.fa-solid { /* set color for arrow */
+  color: red;
 }
 
 #title {
-  font-size: 35px;
+  font-family: 'Bungee';
+  font-size: 1.5em;
 }
