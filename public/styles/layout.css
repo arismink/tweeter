@@ -28,7 +28,7 @@ body {
  */
 
  main {
-   margin: 0em auto;
+   margin: 0 auto;
    width: 90%;
    position: relative;
  }
@@ -41,7 +41,7 @@ body {
  /* resize pfp */
  .pfp {
    display: block;
-   margin: 0px auto;
+   margin: 0 auto;
    border-radius: 50%;
    width: 8em;
    height: auto;

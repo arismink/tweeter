@@ -9,22 +9,26 @@ $(() => {
 
   // function to create HTML markup for each tweet article
   const createTweetElement = function(tweetData) {
-    const username = tweetData.user.name;
-    const pfp = tweetData.user.avatars;
-    const handle = tweetData.user.handle;
-    const content = tweetData.content.text;
-    const date = tweetData.created_at;
+
+    const { 
+      name : username,
+      avatars : profile_pic,
+      handle : user_tag 
+      } = tweetData.user;
+
+    const { text : content } = tweetData.content;
+    const { created_at : date } = tweetData;
 
     const markUp = `
     
       <article class="tweet">
       <header>
         <div class="user">
-          <img class="pfp" src="${pfp}">
+          <img class="pfp" src="${profile_pic}">
           <h3>${username}</h3>
         </div>
 
-        <div class="display-user-tag">${handle}</div>
+        <div class="display-user-tag">${user_tag}</div>
       </header>
       <p>${content}</p>
       <footer>
@@ -42,13 +46,11 @@ $(() => {
 
   // renders each tweet in array into HTML markup 
   const renderTweets = function(tweetsArray) {
-    let renderedTweets = [];
-    
+
     for (let tweet of tweetsArray) {
-      renderedTweets.push(createTweetElement(tweet));
+      // prepends each new rendered tweet into the tweets-container div
+      $('#tweets-container').prepend(createTweetElement(tweet));
     }
-    // prepends rendered tweets to tweets-container
-    $('#tweets-container').prepend(renderedTweets);
   }
 
   const data = [
