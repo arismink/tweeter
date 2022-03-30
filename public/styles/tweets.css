@@ -6,6 +6,11 @@
 
 article.tweet {
   border: 0.2em solid #545149;
+  margin-bottom: 2em;
+}
+
+article.tweet:hover {
+  box-shadow: 0.3em 0.3em 0 0 #D9D9D9; 
 }
 
 article.tweet header {
@@ -73,5 +78,5 @@ a:visited {
 }
 
 a:hover {
-  color: #E7D697;
+  color: #C6B150;
 }
