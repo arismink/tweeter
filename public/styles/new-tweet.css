@@ -2,12 +2,11 @@
   CSS for new tweets
 */
 
-.new-tweet {
+main {
   display: flex;
   flex-direction: column;
 }
 
-/***** fix height *****/
 #tweet-text.input {
   height: 2em;
   width: 100%;
@@ -24,6 +23,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 0.4em;
+  padding-bottom: 1em;
 }
 
 .counter {
