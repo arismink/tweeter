@@ -22,7 +22,7 @@ article.tweet header {
   margin: 1em;
 }
 
-article.tweet .username {
+article.tweet .user {
   display: flex;
 }
 
@@ -33,7 +33,7 @@ article.tweet .pfp {
   border-radius: 50%;
 }
 
-article.tweet .username h3 {
+article.tweet .user h3 {
   margin-left: 0.8em; 
   font-size: 1em;
   font-weight: lighter;

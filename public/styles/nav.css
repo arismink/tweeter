@@ -5,7 +5,6 @@
 */
 
 nav {
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
   height: 120px;
@@ -17,6 +16,7 @@ nav {
   padding-top: 2.5em;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 /* set font style for tweet text*/
