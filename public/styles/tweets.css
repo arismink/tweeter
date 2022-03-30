@@ -61,3 +61,17 @@ article.tweet footer {
   font-size: 0.9em;
   letter-spacing: 0.1em;
 }
+
+/* styling for links */
+
+a:link {
+  color: #4056A1;
+}
+
+a:visited {
+  color: #4056A1;
+}
+
+a:hover {
+  color: #E7D697;
+}
