@@ -37,11 +37,11 @@ body {
    justify-content: center;
  }
 
- /* resize pfp dynamically */
+ /* resize pfp */
  .pfp {
    display: block;
    margin: 0px auto;
    border-radius: 50%;
-   width: 20%;
+   width: 8em;
    height: auto;
  }
