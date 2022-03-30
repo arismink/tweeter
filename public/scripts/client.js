@@ -10,11 +10,11 @@ $(() => {
   // function to create HTML markup for each tweet article
   const createTweetElement = function(tweetData) {
 
-    const { 
+    const {
       name : username,
       avatars : profile_pic,
-      handle : user_tag 
-      } = tweetData.user;
+      handle : user_tag
+    } = tweetData.user;
 
     const { text : content } = tweetData.content;
     const { created_at : date } = tweetData;
@@ -40,18 +40,18 @@ $(() => {
         </div>
       </footer>
     </article>
-    `
-    return markUp
-  }
+    `;
+    return markUp;
+  };
 
-  // renders each tweet in array into HTML markup 
+  // renders each tweet in array into HTML markup
   const renderTweets = function(tweetsArray) {
 
     for (let tweet of tweetsArray) {
       // prepends each new rendered tweet into the tweets-container div
       $('#tweets-container').prepend(createTweetElement(tweet));
     }
-  }
+  };
 
   const data = [
     {
@@ -76,8 +76,8 @@ $(() => {
       },
       "created_at": 1461113959088
     }
-  ]
+  ];
 
   renderTweets(data);
-})
+});
 

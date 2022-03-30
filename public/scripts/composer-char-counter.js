@@ -1,4 +1,4 @@
-/* 
+/*
 
   dynamic character counter for tweet post
 
@@ -23,6 +23,6 @@ $(() => {
     } else if (charCount > 0) {
       $counter.val(charCount).css({'color': '#545149'});
     }
-  })
-})
+  });
+});
 
