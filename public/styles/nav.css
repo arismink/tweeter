@@ -5,6 +5,7 @@
 */
 
 nav {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   height: 120px;
@@ -14,6 +15,8 @@ nav {
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-top: 2.5em;
+  position: sticky;
+  top: 0;
 }
 
 /* set font style for tweet text*/
@@ -31,3 +34,4 @@ nav {
   font-family: 'Bungee';
   font-size: 1.5em;
 }
+
