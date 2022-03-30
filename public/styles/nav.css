@@ -23,7 +23,7 @@ nav {
   font-size: 0.8em;
 }
 
-.fa-solid { /* set color for arrow */
+#tweet-arrow { /* set color for arrow */
   color: red;
 }
 
