@@ -26,6 +26,7 @@ article.tweet .username {
   display: flex;
 }
 
+/* resizes all pfp to standard size */
 article.tweet .pfp {
   width: 4em;
   height: auto;
@@ -68,7 +69,6 @@ article.tweet footer {
 }
 
 /* styling for links */
-
 a:link {
   color: #4056A1;
 }
