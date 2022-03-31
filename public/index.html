@@ -35,7 +35,13 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    
+    <!-- Character counter -->
     <script src="/scripts/composer-char-counter.js"></script>
+
+    <!-- Display Tweet form -->
+    <script src="/scripts/display-form.js"></script>
+
   </head>
 
   <body>
@@ -46,8 +52,12 @@
       </div>
 
       <div class="navbar2">                 
-        <div><b>Write</b> a new tweet</div>
-        <div><i class="fa-solid fa-angles-down" id="tweet-arrow"></i></div>
+        <div>
+          <b>Write</b> a new tweet
+        </div>
+        <div>
+          <span class="new-tweet-click"><i class="fa-solid fa-angles-down" id="tweet-arrow"></i></span>
+        </div>
       </div>
     </nav>
 
@@ -55,7 +65,7 @@
       <div>
           <!-- <img src="/images/profile-hex.jpeg"> -->
 
-          <img class="pfp" src="/images/cat-pfp.jpg">
+          <img id="header_profile_pic" src="/images/cat-pfp.jpg">
 
       </div>
       <br>
@@ -66,71 +76,34 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <h2>Compose Tweet</h2>
-
-      <form action="/tweets" method="POST" id="tweet-form"> 
-        <label for="tweet-text">What are you humming about?</label>
-        
-        <div class="input">
-          <textarea class="input" name="text" id="tweet-text"></textarea>
-        </div>
-
-        <div class="navbar3">
-          <div>
-            <button class="button" type="submit" id="tweet-button">Tweet</button>
-          </div>
+      <section id="new-tweet">
+        <div id="er"></div>
+        <h2>Compose Tweet</h2>
+        <form action="/tweets" method="POST" id="tweet-form"> 
+          <label for="tweet-text">What are you humming about?</label>
           
-          <div>
-            <output name="counter" class="counter" for="tweet-text"></output>
+          <div class="input">
+            <textarea class="input" name="text" id="tweet-text"></textarea>
           </div>
-                
-        </div>
 
-      </form>
+          <div class="navbar3">
+            <div>
+              <button class="button" type="submit" id="tweet-button">Tweet</button>
+            </div>
+            
+            <div>
+              <output name="counter" class="counter" for="tweet-text"></output>
+            </div>
+                  
+          </div>
+
+        </form>
+      </section>
 
 
       <section id="tweets-container">
 
-
-        <!--
-        <article class="tweet">
-          <header>
-            <div class="user">
-              <img class="pfp" src="/images/cat-pfp.jpg">
-              <h3>Nori</h3>
-            </div>
-
-            <div class="display-user-tag">@NoriTheCat</div>
-          </header>
-          <p>if i fits, i sits...</p>
-          <footer>
-            <div class="date-time">6 days ago</div>
-            <div class="tweet-links-icons">
-              <a href="#"><i class="fa-solid fa-flag"></i></a>
-              <a href="#"><i class="fa-solid fa-retweet"></i></a>
-              <a href="#"><i class="fa-solid fa-heart"></i></a>
-            </div>
-          </footer>
-        </article>
-
-        <article class="tweet">
-          <header>
-            <div class="user">
-              <img class="pfp" src="/images/doggo-pfp.jpg">
-              <h3>Doggo</h3></div>
-
-            <div class="display-user-tag">@IsaacTheGoodBoi</div>
-          </header>
-          <p>Chased a squirrel today</p>
-          <footer>
-            <div class="date-time">10 days ago</div>
-            <div class="tweet-links-icons">
-              <a href="#"><i class="fa-solid fa-flag"></i></a>
-              <a href="#"><i class="fa-solid fa-retweet"></i></a>
-              <a href="#"><i class="fa-solid fa-heart"></i></a>
-            </div>
-          </footer>
-        </article> -->
+        <!-- tweets populated by script -->
 
       </section>
     </main>
