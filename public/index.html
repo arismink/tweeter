@@ -42,6 +42,9 @@
     <!-- Display Tweet form -->
     <script src="/scripts/display-form.js"></script>
 
+    <!-- Back to Top Scroll-->
+    <script src="/scripts/composer.js"></script>
+
   </head>
 
   <body>
@@ -56,7 +59,9 @@
           <b>Write</b> a new tweet
         </div>
         <div>
-          <span class="new-tweet-click"><i class="fa-solid fa-angles-down" id="tweet-arrow"></i></span>
+          <span class="new-tweet-click">
+            <i class="fa-solid fa-angles-down" id="tweet-arrow"></i>
+          </span>
         </div>
       </div>
     </nav>
@@ -76,6 +81,13 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
+      <div class="scroll-up">
+        <span class="scroll-to-top-click">
+          <i class="fa-solid fa-angles-up" id="arrow-scroll"></i>
+        </span>
+      </div>
+
       <section id="new-tweet">
         <div id="er"></div>
         <h2>Compose Tweet</h2>
