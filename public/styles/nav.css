@@ -48,3 +48,26 @@ nav {
   font-size: 1.5em;
 }
 
+.scroll-up {
+  bottom: 2em;
+  right: 0;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 1;
+}
+
+/* create icon for scroll */
+#arrow-scroll {
+  padding: 0.85em 0 0 0.98em; /* center arrow */
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  background: red;
+  width: 80px;
+  height: 80px;
+}
+
+#arrow-scroll:hover {
+  background-color: #C6B150;
+}
