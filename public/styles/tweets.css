@@ -27,10 +27,10 @@ article.tweet .user {
 }
 
 /* resizes all pfp to standard size */
-article.tweet .pfp {
-  width: 4em;
+article.tweet .user-pic {
+  width: 3em;
   height: auto;
-  border-radius: 50%;
+  border-radius: 30%;
 }
 
 article.tweet .user h3 {
