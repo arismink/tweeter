@@ -10,16 +10,16 @@ $(() => {
   // Hide icon intially until user scrolls
   $('#arrow-scroll').hide();
 
-  // Display icon when user scrolls and tweet form
+  // Stylizes tweet form and icon behaviour when user scrolls
   $(window).on('scroll', function() {
 
-    if ($(this).scrollTop() !== 0) {
-      $('#arrow-scroll').fadeIn("fast"); // Show icon
-      $('.navbar2').fadeOut("fast"); // Hide tweet form
+    if ($(this).scrollTop() !== 0) { // If user is not at top of page
+      $('#arrow-scroll').fadeIn("fast"); // Show scroll icon
+      $('.navbar2').fadeOut("fast"); // Hide tweet icon
 
     } else {
-      $('#arrow-scroll').fadeOut("fast");
-      $('.navbar2').fadeIn("fast");
+      $('#arrow-scroll').fadeOut("fast"); // Hide scroll icon
+      $('.navbar2').fadeIn("fast"); // Show tweet icon
     }
   })
 
