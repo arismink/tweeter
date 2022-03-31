@@ -28,21 +28,21 @@ body {
  */
 
  main {
-   margin: 0 auto;
-   width: 90%;
-   position: relative;
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
  }
 
  header {
-   justify-content: center;
+  justify-content: center;
 
  }
 
  /* resize pfp */
- .pfp {
-   display: block;
-   margin: 0 auto;
-   border-radius: 50%;
-   width: 8em;
-   height: auto;
- }
+#header_profile_pic {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 8em;
+  height: auto;
+}
