@@ -22,8 +22,7 @@ main {
 .navbar3 {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.4em;
-  padding-bottom: 1em;
+  padding: 0.4em 0 0.5em 0;
 }
 
 .counter {
@@ -41,7 +40,7 @@ main {
   height: 100%;
 }
 
-/* display error if user tweet is too long or empty */
+/* Displays error if user tweet is too long or empty */
 #er {
   text-align: center;
   font-size: 0.8em;

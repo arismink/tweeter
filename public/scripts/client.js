@@ -4,15 +4,15 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// ensure script runs after document finishes loading
+// Execute script after document loads
 $(() => {
   loadTweets();
-  $('#er').hide(); // hide error message initially
+  $('#er').hide(); // Hides error message upon load
   $('#tweet-form').on('submit', onSubmit)
 
 });
 
-
+// Handles tweet submission
 const onSubmit = function(e) {
   e.preventDefault();
   const userInput = $('#tweet-text').val();
@@ -21,8 +21,8 @@ const onSubmit = function(e) {
   // ask mentor how to prevent message from changing before slideup
   $('#er').slideUp();
 
-  // display error if validation fails
-  if (userInput.length > 3) {
+  // Validation test for input
+  if (userInput.length > 140) {
     $('#er').html(`<i class="fa-solid fa-triangle-exclamation"></i>
       Tweet entered must be no longer than 140 characters.
       <i class="fa-solid fa-triangle-exclamation"></i>`);
@@ -40,21 +40,21 @@ const onSubmit = function(e) {
 
   $.post("/tweets", data)
     .then(() => {
-      loadTweets(); // fetch new tweet upon submission
-      this.reset(); // clear input box value
+      loadTweets(); // Fetches new tweet upon submission
+      this.reset(); // Clears input box value
     })
 
 }
 
-// fetches tweets from /tweets page and loads onto page
+// Fetches tweets from /tweets page and loads onto page
 const loadTweets = () => {
   $.get("/tweets")
     .then(function(data) {
-      renderTweets(data);
+      renderTweets(data); // Loads existing tweet in HTML markup
     });
 }
 
-// prevent XSS
+// Prevents XSS but posts tweet without replacing certain characters
 const esc = function(tweetText) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(tweetText));
@@ -62,7 +62,7 @@ const esc = function(tweetText) {
   return div.innerHTML;
 }
 
-// function to create HTML markup for each tweet article
+// Function to create HTML markup for each tweet article
 const createTweetElement = function(tweetData) {
 
   const {
@@ -85,9 +85,9 @@ const createTweetElement = function(tweetData) {
 
       <div class="display-user-tag">${user_tag}</div>
     </header>
-    <p>${esc(content)}</p>
+    <p>${esc(content)}</p> <!-- catches scripts in input -->
     <footer>
-      <div class="date-time">${timeago.format(date)}</div>
+      <div class="date-time">${timeago.format(date)}</div> <!-- converts time to time elapsed since post -->
       <div class="tweet-links-icons">
         <a href="#"><i class="fa-solid fa-flag"></i></a>
         <a href="#"><i class="fa-solid fa-retweet"></i></a>
@@ -99,7 +99,7 @@ const createTweetElement = function(tweetData) {
   return markUp;
 };
 
-// renders each tweet in array into HTML markup
+// Renders tweet into HTML markup
 const renderTweets = function(tweetsArray) {
   const container = $('#tweets-container');
   container.empty();
