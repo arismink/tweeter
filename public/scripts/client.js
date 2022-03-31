@@ -86,6 +86,7 @@ const createTweetElement = function(tweetData) {
 // renders each tweet in array into HTML markup
 const renderTweets = function(tweetsArray) {
   const container = $('#tweets-container');
+  container.empty();
 
   for (let tweet of tweetsArray) {
     // prepends each new rendered tweet into the tweets-container div
