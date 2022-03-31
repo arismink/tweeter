@@ -24,8 +24,23 @@ nav {
   font-size: 0.8em;
 }
 
-#tweet-arrow { /* set color for arrow */
+#tweet-arrow { /* set animation for red arrow*/
   color: red;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+#tweet-arrow:hover {
+  color: #C6B150;
 }
 
 #title {
