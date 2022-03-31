@@ -8,14 +8,14 @@ main {
 }
 
 #tweet-text.input {
-  height: 2em;
+  font-size: 0.8em;
+  height: 3em;
   width: 100%;
   border: none;
   border-bottom: 0.2em solid #565149;
   background-color: transparent;
-  color: #565149;
-  font-weight: bold;
   outline: none;
+  resize: none;
 }
 
 /* control style for tweet button and counter */
