@@ -7,26 +7,35 @@
 // ensure script runs after document finishes loading
 $(() => {
   loadTweets();
-
+  $('#er').hide(); // hide error message initially
   $('#tweet-form').on('submit', onSubmit)
-  
+
 });
+
 
 const onSubmit = function(e) {
   e.preventDefault();
-
   const userInput = $('#tweet-text').val();
 
-  // form submission validation
-  if (userInput.length > 140) {
-    alert('Tweet is too long!');
+
+  // ask mentor how to prevent message from changing before slideup
+  $('#er').slideUp();
+
+  // display error if validation fails
+  if (userInput.length > 3) {
+    $('#er').html(`<i class="fa-solid fa-triangle-exclamation"></i>
+      Tweet entered must be no longer than 140 characters.
+      <i class="fa-solid fa-triangle-exclamation"></i>`);
+    $('#er').slideDown();
     return;
 
   } else if (userInput === "") {
-    alert('Tweet cannot be empty!');
+    $('#er').html(`<i class="fa-solid fa-triangle-exclamation"></i>
+      Tweet entered cannot be empty!
+      <i class="fa-solid fa-triangle-exclamation"></i>`);
+    $('#er').slideDown();
     return;
   }
-
   const data = $(this).serialize();
 
   $.post("/tweets", data)
@@ -45,6 +54,13 @@ const loadTweets = () => {
     });
 }
 
+// prevent XSS
+const esc = function(tweetText) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(tweetText));
+
+  return div.innerHTML;
+}
 
 // function to create HTML markup for each tweet article
 const createTweetElement = function(tweetData) {
@@ -63,13 +79,13 @@ const createTweetElement = function(tweetData) {
     <article class="tweet">
     <header>
       <div class="user">
-        <img class="pfp" src="${profile_pic}">
+        <img class="user-pic" src="${profile_pic}">
         <h3>${username}</h3>
       </div>
 
       <div class="display-user-tag">${user_tag}</div>
     </header>
-    <p>${content}</p>
+    <p>${esc(content)}</p>
     <footer>
       <div class="date-time">${timeago.format(date)}</div>
       <div class="tweet-links-icons">
