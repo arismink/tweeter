@@ -33,6 +33,7 @@ main {
 /* CSS Styling for tweet button */
 .button {
   background-color: #4056A1;
+  border: 0 solid #E5E7EB;
   box-sizing: border-box;
   color: #FFFFFF;
   font-family: "Bungee", sans-serif;
