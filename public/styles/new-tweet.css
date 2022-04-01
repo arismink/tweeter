@@ -1,5 +1,5 @@
 /*
-  CSS for new tweets
+  Stylizes the tweet-form
 */
 
 main {
@@ -18,7 +18,7 @@ main {
   resize: none;
 }
 
-/* control style for tweet button and counter */
+/* Controls tweet button and counter */
 .navbar3 {
   display: flex;
   justify-content: space-between;
@@ -30,6 +30,7 @@ main {
   font-family: 'Bungee';
 }
 
+/* style for tweet button
 .button {
   font-size: 0.8em;
   font-family: 'Bungee';
@@ -38,6 +39,50 @@ main {
   border: none;
   width: 110%;
   height: 100%;
+} */
+
+/* CSS Styling for tweet button */
+.button {
+  background-color: #4056A1;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: 'Bungee';
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-align: center;
+  position: relative;
+  width: 90px; /* absolute size */
+  height: 40px;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  touch-action: manipulation;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.3em 0.3em;
+  }
 }
 
 /* Displays error if user tweet is too long or empty */
