@@ -1,7 +1,16 @@
 /*
   Stylizes main profile header
 */
+/* 
 
+  FONTS 
+
+*/
+/*
+
+  COLORS
+
+*/
 header.profile {
   padding-top: 4em;
   height: 500px;
@@ -16,22 +25,23 @@ header.profile {
 /* Stylize header use name to match tweet button */
 .user-name h2 {
   font-weight: 400;
-  background-color: #FFFFFF;
+  background-color: #f4f1ec;
   box-sizing: border-box;
   color: #545149;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1em;
   width: 100%;
   position: relative;
   transform: rotate(-2deg);
-  padding:0.1em;
+  padding: 0.1em;
 }
 
- /* Resize profile pic as necessary */
+/* Resize profile pic as necessary */
 #header_profile_pic {
   display: block;
   margin: 0 auto;
   border-radius: 50%;
-  width: 200px; /* explicit width for header profile image */
+  width: 200px;
+  /* explicit width for header profile image */
   height: auto;
 }

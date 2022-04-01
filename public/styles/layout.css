@@ -3,9 +3,20 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+/* 
+
+  FONTS 
+
+*/
+/*
+
+  COLORS
+
+*/
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -13,14 +24,14 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
   display: flex;
   flex-direction: column;
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 1.5em; /* 24 px */
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5em;
+  /* 24 px */
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*
@@ -30,7 +41,6 @@ body {
   Stylizes profile header, profile image, user
 
  */
-
 main {
   margin: 0 auto;
   width: 90%;
@@ -43,7 +53,7 @@ header {
 
 /* Offset container position due to hidden form */
 #tweets-container {
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 
 /* Stylizes for desktop and larger styles */
@@ -60,10 +70,8 @@ header {
   }
 
   #content {
-    padding-top: 8.5em;  
+    padding-top: 8.5em;
     position: relative;
     width: 100%;
   }
-
-  
 }

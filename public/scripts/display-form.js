@@ -6,11 +6,15 @@
 
 $(() => {
   // Hides tweet-form upon load
-  $('#new-tweet').hide();
+  $('#compose-tweet').hide();
 
   // Displays form when arrow is clicked
   $('#tweet-arrow').on('click', function() {
-    $('#new-tweet').slideDown();
+
+    // Toggles compose tweet form visibility
+    $('#compose-tweet').toggle(1000)
     $('#tweet-text').focus(); // Puts pointer in textbox
+
   });
+
 });

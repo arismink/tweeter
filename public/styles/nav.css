@@ -3,8 +3,17 @@
   Stylizes navbar: tweeter logo, scroll icon, new tweet icon
 
 */
-
 /* Styling for blue nav bar */
+/* 
+
+  FONTS 
+
+*/
+/*
+
+  COLORS
+
+*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -21,7 +30,7 @@ nav {
 /* Sets font style for tweet text*/
 .navbar2 {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.8em;
 }
 
@@ -41,13 +50,12 @@ nav {
     transform: translateY(5px);
   }
 }
-
 #tweet-arrow:hover {
-  color: #C6B150;
+  color: #fdc083;
 }
 
 #title {
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
   font-size: 1.5em;
 }
 
@@ -63,8 +71,9 @@ nav {
 
 /* Creates icon for scroll */
 #arrow-scroll {
-  padding: 0.85em 0 0 0.98em; /* Centers arrow within circle */
-  color: white;
+  padding: 0.85em 0 0 0.98em;
+  /* Centers arrow within circle */
+  color: #FFFFFF;
   font-size: 30px;
   border-radius: 50%;
   background: #EB5744;
@@ -74,7 +83,7 @@ nav {
 }
 
 #arrow-scroll:hover {
-  background-color: #C6B150;
+  background-color: #fdc083;
 }
 
 /* Mobile and smaller devices only styles */
