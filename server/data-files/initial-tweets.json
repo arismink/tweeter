@@ -8,7 +8,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1648521395151
+    "created_at": 1648357126291
   },
   {
     "user": {
@@ -19,7 +19,7 @@
     "content": {
       "text": "Je pense , donc je suis"
     },
-    "created_at": 1648607795151
+    "created_at": 1648443526291
   },
   {
     "user": {
@@ -30,6 +30,28 @@
     "content": {
       "text": "If i fits, i sits."
     },
-    "created_at": 1648694195151
+    "created_at": 1648529926291
+  },
+  {
+    "user": {
+      "name": "Nori",
+      "avatars": "/images/cat-pfp.jpg",
+      "handle": "@NoriTheCat"
+    },
+    "content": {
+      "text": "i think the root of all your problems can be traced back to not feeding me enough."
+    },
+    "created_at": 1648616326291
+  },
+  {
+    "user": {
+      "name": "Nori",
+      "avatars": "/images/cat-pfp.jpg",
+      "handle": "@NoriTheCat"
+    },
+    "content": {
+      "text": "...meow?"
+    },
+    "created_at": 1648702726291
   }
 ]
