@@ -1,0 +1,95 @@
+/*
+  Stylizes the tweet-form
+*/
+/* 
+
+  FONTS 
+
+*/
+/*
+
+  COLORS
+
+*/
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for tweet input form */
+#tweet-text.input {
+  font-size: 0.8em;
+  height: 3em;
+  width: 100%;
+  border: none;
+  border-bottom: 0.2em solid #545149;
+  background-color: transparent;
+  outline: none;
+  resize: none;
+}
+
+/* Controls tweet button and counter */
+.navbar3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em 0 0.5em 0;
+}
+
+.counter {
+  font-size: 0.8em;
+  font-family: "Bungee", sans-serif;
+}
+
+/* CSS Styling for tweet button */
+.button {
+  background-color: #4056A1;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: "Bungee", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-align: center;
+  position: relative;
+  width: 90px;
+  /* absolute size */
+  height: 40px;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  touch-action: manipulation;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.3em 0.3em;
+  }
+}
+/* Styling for error message that
+   displays in input tweet validation */
+#er {
+  text-align: center;
+  font-size: 0.8em;
+  color: #EB5744;
+  border: 0.2em solid #EB5744;
+  padding: 0.5em;
+  margin: 1em 0 0 0;
+}
