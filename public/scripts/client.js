@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// Execute script after document loads
+// Executes script after document loads
 $(() => {
   loadTweets();
   $('#er').hide(); // Hides error message upon load
@@ -18,8 +18,9 @@ const onSubmit = function(e) {
   const userInput = $('#tweet-text').val();
 
 
-  // ask mentor how to prevent message from changing before slideup
-  $('#er').slideUp();
+  // Hides any prexisting error messages
+  $('#er').text('');
+  $('#er').slideUp('fast');
 
   // Validation test for input
   if (userInput.length > 140) {
@@ -85,10 +86,10 @@ const createTweetElement = function(tweetData) {
 
       <div class="display-user-tag">${user_tag}</div>
     </header>
-    <p>${esc(content)}</p> <!-- catches scripts in input -->
+    <p>${esc(content)}</p> <!-- Catches scripts in input -->
     <footer>
       <div class="date-time">${timeago.format(date)}</div> <!-- converts time to time elapsed since post -->
-      <div class="tweet-links-icons">
+      <div class="tweet-links-icons"> <!-- Fake links -->
         <a href="#"><i class="fa-solid fa-flag"></i></a>
         <a href="#"><i class="fa-solid fa-retweet"></i></a>
         <a href="#"><i class="fa-solid fa-heart"></i></a>
