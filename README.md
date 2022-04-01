@@ -7,6 +7,16 @@ This app was created to practice with HTML, CSS, JS, jQuery, AJAX, SASS and fron
 ## Screenshots
 
 !["mobile tweeter page view"](https://github.com/arismink/tweeter/blob/master/docs/tablet-tweet-page.png?raw=true)
+!["desktop tweeter page view"](https://github.com/arismink/tweeter/blob/master/docs/desktop-tweet-page.png?raw=true)
+
+!["mobile compose tweet"](https://github.com/arismink/tweeter/blob/master/docs/tablet-compose-tweet.png?raw=true)
+!["desktop compose tweet"](https://github.com/arismink/tweeter/blob/master/docs/desktop-compose-tweet.png?raw=true)
+
+!["mobile tweet page scroll"](https://github.com/arismink/tweeter/blob/master/docs/tablet-tweet-page-scroll.png?raw=true)
+!["desktop tweet page scroll"](https://github.com/arismink/tweeter/blob/master/docs/desktop-page-scroll.png?raw=true)
+
+!["mobile error handling"](https://github.com/arismink/tweeter/blob/master/docs/mobile-error-handling.png?raw=true)
+!["desktop error handling"](https://github.com/arismink/tweeter/blob/master/docs/desktop-error-handling.png?raw=true)
 
 ## Getting Started
 
