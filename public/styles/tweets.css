@@ -1,6 +1,6 @@
 /*
 
-  CSS for tweets
+  Stylizes tweets-container
 
 */
 
@@ -26,11 +26,11 @@ article.tweet .user {
   display: flex;
 }
 
-/* resizes all pfp to standard size */
+/* Resizes all profile pics to standard circular size */
 article.tweet .user-pic {
   width: 3em;
   height: auto;
-  border-radius: 30%;
+  border-radius: 50%;
 }
 
 article.tweet .user h3 {
@@ -45,9 +45,11 @@ article.tweet .display-user-tag {
   font-weight: 600;
 }
 
+/* Stylizes tweet body text */
 article.tweet p {
   font-size: 0.9em;
   font-weight: 400;
+  word-wrap: break-word;
   margin: 1em;
 }
 
@@ -67,7 +69,7 @@ article.tweet footer {
   letter-spacing: 0.1em;
 }
 
-/* styling for links */
+/* Styling for links */
 a:link {
   color: #4056A1;
 }

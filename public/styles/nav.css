@@ -1,6 +1,6 @@
 /*
 
-  CSS for nav element
+  Stylizes navbar: tweeter logo, scroll icon, new tweet icon
 
 */
 
@@ -9,23 +9,24 @@ nav {
   justify-content: space-between;
   height: 120px;
   width: 100%;
+  position: fixed;
   background-color: #4056A1;
   color: #FFFFFF;
   padding: 2.5em 1.5em 0 1.5em;
-  position: sticky;
   top: 0;
   z-index: 1;
 }
 
-/* set font style for tweet text*/
+/* Sets font style for tweet text*/
 .navbar2 {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.8em;
 }
 
-#tweet-arrow { /* set animation for red arrow*/
-  color: red;
+#tweet-arrow { /* Sets animation for red arrow*/
+  color: #ff331a;
+  cursor: pointer;
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 0.5s infinite alternate;
 }
@@ -44,7 +45,7 @@ nav {
 }
 
 #title {
-  font-family: 'Bungee';
+  font-family: 'Bungee', sans-serif;
   font-size: 1.5em;
 }
 
@@ -57,17 +58,26 @@ nav {
   z-index: 1;
 }
 
-/* create icon for scroll */
+/* Creates icon for scroll */
 #arrow-scroll {
-  padding: 0.85em 0 0 0.98em; /* center arrow */
+  padding: 0.85em 0 0 0.98em; /* Centers arrow */
   color: white;
   font-size: 30px;
   border-radius: 50%;
-  background: red;
+  background: #EB5744;
   width: 80px;
   height: 80px;
+  cursor: pointer;
 }
 
 #arrow-scroll:hover {
   background-color: #C6B150;
+}
+
+/* Mobile and smaller devices only styles */
+@media only screen and (max-width: 1024px) {
+  nav {
+    position: fixed;
+    background-color: transparent;
+  }
 }
