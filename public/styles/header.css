@@ -1,13 +1,14 @@
 /*
-  CSS for header element
+  Stylizes main profile header
 */
 
 header.profile {
-  height: 400px;
+  padding-top: 4em;
+  height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #cdf279;
-  background-image: url("../images/gplay.png");
+  background-color: #dba8d0;
+  background-image: url("../images/dust.png");
 }
