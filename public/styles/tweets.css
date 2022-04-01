@@ -3,7 +3,6 @@
   Stylizes tweets within tweet-container
 
 */
-
 /* Styling for tweets displayed */
 article.tweet {
   border: 0.2em solid #545149;
@@ -11,7 +10,7 @@ article.tweet {
 }
 
 article.tweet:hover {
-  box-shadow: 0.3em 0.3em 0 0 #D9D9D9; 
+  box-shadow: 0.3em 0.3em 0 0 #D9D9D9;
 }
 
 article.tweet header {
@@ -34,8 +33,9 @@ article.tweet .user-pic {
   border-radius: 50%;
 }
 
+/* Styles user name heading in profile header */
 article.tweet .user h3 {
-  margin-left: 0.8em; 
+  margin-left: 0.8em;
   font-size: 1em;
   font-weight: lighter;
 }
@@ -54,6 +54,7 @@ article.tweet p {
   margin: 1em;
 }
 
+/* Styles footer of tweet */
 article.tweet footer {
   display: flex;
   flex-direction: row;
@@ -81,5 +82,5 @@ a:visited {
 }
 
 a:hover {
-  color: #C6B150;
+  color: #fdc083;
 }

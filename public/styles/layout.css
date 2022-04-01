@@ -3,16 +3,6 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-/* 
-
-  FONTS 
-
-*/
-/*
-
-  COLORS
-
-*/
 html {
   box-sizing: border-box;
 }
@@ -53,7 +43,7 @@ header {
 
 /* Offset container position due to hidden form */
 #tweets-container {
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 /* Stylizes for desktop and larger styles */

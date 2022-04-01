@@ -4,16 +4,6 @@
 
 */
 /* Styling for blue nav bar */
-/* 
-
-  FONTS 
-
-*/
-/*
-
-  COLORS
-
-*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -72,7 +62,6 @@ nav {
 /* Creates icon for scroll */
 #arrow-scroll {
   padding: 0.85em 0 0 0.98em;
-  /* Centers arrow within circle */
   color: #FFFFFF;
   font-size: 30px;
   border-radius: 50%;
