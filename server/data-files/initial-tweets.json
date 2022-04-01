@@ -8,7 +8,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1648519260781
+    "created_at": 1648494324068
   },
   {
     "user": {
@@ -19,6 +19,17 @@
     "content": {
       "text": "Je pense , donc je suis"
     },
-    "created_at": 1648605660781
+    "created_at": 1648580724068
+  },
+  {
+    "user": {
+      "name": "Nori",
+      "avatars": "/images/cat-pfp.jpg",
+      "handle": "@NoriTheCat"
+    },
+    "content": {
+      "text": "If i fits, i sits."
+    },
+    "created_at": 1648667124068
   }
 ]
