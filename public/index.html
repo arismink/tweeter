@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=1">
+    
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
@@ -49,6 +53,8 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
+
+
     <nav>
       <div class="navbar1" id="title">
       <span>tweeter</span>
@@ -65,59 +71,66 @@
         </div>
       </div>
     </nav>
+  
+    <div id="header-profile">
+      <header class="profile">
+        <div>
+            <!-- <img src="/images/profile-hex.jpeg"> -->
+  
+            <img id="header_profile_pic" src="/images/cat-pfp.jpg">
+  
+        </div>
+        <br>
+        <div class="user-name">
+            <h2><b>Nori</b> the Cat</h2>
+        </div>
+      </header>
 
-    <header class="profile">
-      <div>
-          <!-- <img src="/images/profile-hex.jpeg"> -->
-
-          <img id="header_profile_pic" src="/images/cat-pfp.jpg">
-
-      </div>
-      <br>
-      <div>
-          <h2>Nori the Cat</h2>
-      </div>
-    </header>
+    </div>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
 
-      <div class="scroll-up">
-        <span class="scroll-to-top-click">
-          <i class="fa-solid fa-angles-up" id="arrow-scroll"></i>
-        </span>
-      </div>
+    <div id="content">
+      <main class="container">
 
-      <section id="new-tweet">
-        <div id="er"></div>
-        <h2>Compose Tweet</h2>
-        <form id="tweet-form"> 
-          <label for="tweet-text">What are you humming about?</label>
-          
-          <div class="input">
-            <textarea class="input" name="text" id="tweet-text"></textarea>
-          </div>
-
-          <div class="navbar3">
-            <div>
-              <button class="button" type="submit" id="tweet-button">Tweet</button>
-            </div>
+        <div class="scroll-up">
+          <span class="scroll-to-top-click">
+            <i class="fa-solid fa-angles-up" id="arrow-scroll"></i>
+          </span>
+        </div>
+  
+        <section id="new-tweet">
+          <div id="er"></div> <!-- Error handling for form validation -->
+          <h2>Compose Tweet</h2>
+          <form id="tweet-form"> 
+            <label for="tweet-text">What are you humming about?</label>
             
-            <div>
-              <output name="counter" class="counter" for="tweet-text"></output>
+            <div class="input">
+              <textarea class="input" name="text" id="tweet-text"></textarea>
             </div>
-                  
-          </div>
+  
+            <div class="navbar3">
+              <div>
+                <button class="button" type="submit" id="tweet-button">Tweet</button>
+              </div>
+              
+              <div>
+                <output name="counter" class="counter" for="tweet-text"></output>
+              </div>
+                    
+            </div>
+  
+          </form>
+        </section>
+  
+  
+        <section id="tweets-container">
+  
+          <!-- tweets populated by script -->
+  
+        </section>
+    </div>
 
-        </form>
-      </section>
-
-
-      <section id="tweets-container">
-
-        <!-- tweets populated by script -->
-
-      </section>
     </main>
   </body>
 </html>
