@@ -1,9 +1,10 @@
 /*
 
-  Stylizes tweets-container
+  Stylizes tweets within tweet-container
 
 */
 
+/* Styling for tweets displayed */
 article.tweet {
   border: 0.2em solid #545149;
   margin-bottom: 2em;
@@ -64,6 +65,7 @@ article.tweet footer {
   margin: 0.6em;
 }
 
+/* Styling for icons in the tweets footer */
 .tweet-links-icons {
   font-size: 0.9em;
   letter-spacing: 0.1em;

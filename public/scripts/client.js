@@ -8,32 +8,36 @@
 $(() => {
   loadTweets();
   $('#er').hide(); // Hides error message upon load
-  $('#tweet-form').on('submit', onSubmit)
+  $('#tweet-form').on('submit', onSubmit);
 
 });
 
 // Handles tweet submission
 const onSubmit = function(e) {
   e.preventDefault();
+
   const userInput = $('#tweet-text').val();
+
+  // Exclamation icon for error message
+  const warnIcon = `<i class="fa-solid fa-triangle-exclamation"></i>`;
 
 
   // Hides any prexisting error messages
   $('#er').text('');
-  $('#er').slideUp('fast');
+  $('#er').slideUp('fast'); // Hide animation
 
   // Validation test for input
   if (userInput.length > 140) {
-    $('#er').html(`<i class="fa-solid fa-triangle-exclamation"></i>
+    $('#er').html(`${warnIcon} 
       Tweet entered must be no longer than 140 characters.
-      <i class="fa-solid fa-triangle-exclamation"></i>`);
+      ${warnIcon}`);
     $('#er').slideDown();
     return;
 
-  } else if (userInput === "") {
-    $('#er').html(`<i class="fa-solid fa-triangle-exclamation"></i>
+  } else if (userInput === '') {
+    $('#er').html(`${warnIcon}
       Tweet entered cannot be empty!
-      <i class="fa-solid fa-triangle-exclamation"></i>`);
+      ${warnIcon}`);
     $('#er').slideDown();
     return;
   }
@@ -43,9 +47,9 @@ const onSubmit = function(e) {
     .then(() => {
       loadTweets(); // Fetches new tweet upon submission
       this.reset(); // Clears input box value
-    })
+    });
 
-}
+};
 
 // Fetches tweets from /tweets page and loads onto page
 const loadTweets = () => {
@@ -53,7 +57,7 @@ const loadTweets = () => {
     .then(function(data) {
       renderTweets(data); // Loads existing tweet in HTML markup
     });
-}
+};
 
 // Prevents XSS but posts tweet without replacing certain characters
 const esc = function(tweetText) {
@@ -61,7 +65,7 @@ const esc = function(tweetText) {
   div.appendChild(document.createTextNode(tweetText));
 
   return div.innerHTML;
-}
+};
 
 // Function to create HTML markup for each tweet article
 const createTweetElement = function(tweetData) {
@@ -106,7 +110,7 @@ const renderTweets = function(tweetsArray) {
   container.empty();
 
   for (let tweet of tweetsArray) {
-    // prepends each new rendered tweet into the tweets-container div
+    // Prepends each new rendered tweet into the tweets-container div
     container.prepend(createTweetElement(tweet));
   }
 };

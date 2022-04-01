@@ -4,6 +4,7 @@
 
 */
 
+/* Styling for blue nav bar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -24,7 +25,8 @@ nav {
   font-size: 0.8em;
 }
 
-#tweet-arrow { /* Sets animation for red arrow*/
+/* Sets animation for red arrow*/
+#tweet-arrow {
   color: #ff331a;
   cursor: pointer;
   animation: bounce 1s infinite alternate;
@@ -49,6 +51,7 @@ nav {
   font-size: 1.5em;
 }
 
+/* Positions scroll-up icon */
 .scroll-up {
   bottom: 2em;
   right: 0;
@@ -60,7 +63,7 @@ nav {
 
 /* Creates icon for scroll */
 #arrow-scroll {
-  padding: 0.85em 0 0 0.98em; /* Centers arrow */
+  padding: 0.85em 0 0 0.98em; /* Centers arrow within circle */
   color: white;
   font-size: 30px;
   border-radius: 50%;

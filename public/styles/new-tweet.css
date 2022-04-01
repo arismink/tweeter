@@ -7,6 +7,7 @@ main {
   flex-direction: column;
 }
 
+/* Styling for tweet input form */
 #tweet-text.input {
   font-size: 0.8em;
   height: 3em;
@@ -29,17 +30,6 @@ main {
   font-size: 0.8em;
   font-family: 'Bungee';
 }
-
-/* style for tweet button
-.button {
-  font-size: 0.8em;
-  font-family: 'Bungee';
-  color: #FFFFFF;
-  background-color: #4056A1;
-  border: none;
-  width: 110%;
-  height: 100%;
-} */
 
 /* CSS Styling for tweet button */
 .button {
@@ -85,7 +75,8 @@ main {
   }
 }
 
-/* Displays error if user tweet is too long or empty */
+/* Styling for error message that
+   displays in input tweet validation */
 #er {
   text-align: center;
   font-size: 0.8em;

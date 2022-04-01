@@ -4,15 +4,13 @@
 
 */
 
-// get mentor to review this
-
 $(() => {
   // Hides tweet-form upon load
   $('#new-tweet').hide();
 
-  // Display form when arrow is clicked
+  // Displays form when arrow is clicked
   $('#tweet-arrow').on('click', function() {
     $('#new-tweet').slideDown();
-    $('#tweet-text').focus();
-  })
-})
+    $('#tweet-text').focus(); // Puts pointer in textbox
+  });
+});
